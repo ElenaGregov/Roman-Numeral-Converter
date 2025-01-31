@@ -53,3 +53,11 @@ convertBtn.addEventListener("click", function() {
     output.textContent = toRoman(num);
   }
 });
+
+// Add an event listener for the Enter key on the input field
+numberInput.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    // Trigger the same function as clicking the button
+    convertBtn.click();
+  }
+});
